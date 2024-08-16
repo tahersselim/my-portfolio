@@ -1,0 +1,85 @@
+.contactpage {
+  min-height: calc(100vh - 4rem); /* Adjusted to account for any header/footer */
+  width: 100vw;
+  max-width: 60rem; /* Limiting max width for larger screens */
+  margin: 0 auto;
+  margin-top: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem; /* Added padding for smaller screens */
+}
+
+.contactdescription {
+  padding: 1rem;
+  font-size: medium;
+  font-weight: 300;
+}
+
+.contactform {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 60rem; /* Aligns with the max width of the parent */
+}
+
+.name, .email, .msg {
+  font-size: medium;
+  width: 100%;
+  max-width: 40rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  color: rgb(136, 200, 214);
+  border: none;
+  border-radius: 0.5rem;
+  background-color: rgb(19, 75, 112);
+  box-sizing: border-box; /* Ensures padding is included in the element's width */
+}
+
+.btn {
+  height: 2rem;
+  cursor: pointer;
+  background: #E1E1E1;
+  color: rgb(80, 140, 155);
+  border: 0.1rem solid rgb(80, 140, 155);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  border-radius: 2rem;
+  margin-top: 1rem;
+  transition: background-color 0.3s, color 0.3s, border 0.3s; /* Smooth transition for hover effects */
+}
+
+.btn:hover {
+  background: rgb(19, 75, 112);
+  color: #E1E1E1;
+  border: 0.1rem solid rgb(19, 75, 112);    
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 768px) {
+  .contactpage {
+    padding: 0 1rem;
+  }
+
+  .contactdescription {
+    font-size: small;
+  }
+
+  .name, .email, .msg {
+    font-size: small;
+    padding: 0.4rem;
+  }
+
+  .btn {
+    height: 1.5rem;
+    font-size: small;
+    padding: 0 0.8rem;
+  }
+}

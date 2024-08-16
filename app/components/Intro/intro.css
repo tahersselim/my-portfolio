@@ -1,0 +1,159 @@
+#intro {
+    height: calc(100vh - -6rem);
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.bg {
+    position: absolute;
+    top: -2rem;
+    right: 0;
+    z-index: -1;
+    object-fit: cover;
+    height: 112vh;
+    width: 40vw;
+}
+
+.introcontent {
+    width: 50%;
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    margin-right: 16rem;
+}
+
+.HI {
+    font-size: 1.75rem;
+    font-weight: 100;
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.introname {
+    color: rgb(19, 75, 112);
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.intropara {
+    font-size: medium;
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.introimage {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.introimage img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.btn {
+    background: #E1E1E1;
+    margin: 1rem 0;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    color: rgb(80, 140, 155);
+    border: 0.1rem solid rgb(80, 140, 155);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn:hover {
+    background: rgb(19, 75, 112);
+    color: #E1E1E1;
+    border: 0.1rem solid rgb(19, 75, 112);
+}
+
+.introtext {
+    font-weight: 100;
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@media screen and (max-width: 840px) {
+    #intro {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .bg {
+        right: -10vw;
+        width: 60vw;
+    }
+    .introcontent {
+        display: contents;
+        text-align: center;
+        width: 100%;
+        margin-right: 0;
+        padding: 1rem;
+        font-size: 2rem;
+    }
+    .introimage {
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .HI {
+        font-size: 1.5rem;
+    }
+    .introname {
+        font-size: 2rem;
+    }
+    .intropara {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .bg {
+        right: -20vw;
+        width: 80vw;
+    }
+    .introcontent {
+        width: 100%;
+        display: contents;
+        text-align: center;
+        margin-right: 0;
+        padding: 1rem;
+        font-size: 3rem;
+    }
+    .introimage {
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .HI {
+        font-size: 1.25rem;
+    }
+    .introname {
+        font-size: 1.5rem;
+    }
+    .intropara {
+        font-size: 0.875rem;
+    }
+}
