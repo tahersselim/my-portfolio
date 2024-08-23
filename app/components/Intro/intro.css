@@ -132,6 +132,7 @@
 
 @media screen and (max-width: 480px) {
     .bg {
+        display: none;
         right: -20vw;
         width: 80vw;
     }

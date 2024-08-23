@@ -10,8 +10,12 @@ function Works() {
         navigate.
       </span>
       <div className="worksimages">
-        <img src="/My design.png" alt="workImg" className="worksimg" />
-        <img src="/My design.png" alt="workImg" className="worksimg" />
+        <a href="https://cinepedia-zeta.vercel.app/">
+          <img src="/cinepedia.png" alt="workImg" className="worksimg" />
+        </a>
+        <a href="https://mindwave-six.vercel.app/">
+          <img src="/mindwave.png" alt="workImg" className="worksimg" />
+        </a>
         <img src="/My design.png" alt="workImg" className="worksimg" />
         <img src="/My design.png" alt="workImg" className="worksimg" />
         <img src="/My design.png" alt="workImg" className="worksimg" />
